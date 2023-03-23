@@ -10,7 +10,7 @@ func main() {
 	fmt.Scanln(&inputuser)
 
 	if inputuser == 1 {
-		var rows int = 5
+		var rows = 5
 		var k int
 
 		for i := 1; i <= rows; i++ {
@@ -28,7 +28,7 @@ func main() {
 			fmt.Println("")
 		}
 	} else {
-		var rows2 int = 5
+		var rows2 = 5
 		var a, b int
 		for a = rows2; a >= 1; a-- {
 			for space := 1; space <= rows2-a; space++ {
