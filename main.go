@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	var rows int = 5
@@ -17,6 +19,21 @@ func main() {
 			if k == 2*i-1 {
 				break
 			}
+		}
+		fmt.Println("")
+	}
+
+	var rows2 = 5
+	var i, j int
+	for i = rows2; i >= 1; i-- {
+		for space := 1; space <= rows2-i; space++ {
+			fmt.Print("  ")
+		}
+		for j = i; j <= 2*i-1; j++ {
+			fmt.Printf("* ")
+		}
+		for j = 0; j < i-1; j++ {
+			fmt.Printf("* ")
 		}
 		fmt.Println("")
 	}
